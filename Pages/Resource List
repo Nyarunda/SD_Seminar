@@ -1,0 +1,21 @@
+page 77 "Resouce List"
+{
+    PageType = List;
+    SourceTable = "Resource"
+    ApplicationArea = All;
+    UsageCategory = Lists;
+    Editable = false;
+    CardPageId = "Resource Card";
+    
+    layout
+    {
+        area(Content)
+        {
+            repeater(Group)
+            {
+                field("Resource Type"; "Resource Type") { ApplicationArea = All}
+                field("Maximum Participants"; "Maximum Participants") { ApplicationArea = All}
+            }
+        }
+    }
+}
