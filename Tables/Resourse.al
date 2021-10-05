@@ -1,27 +1,18 @@
-table 156 Resource
+tableextension 50103 Resource1 extends Resource
 {
-    DataClassification = ToBeClassified;
 
     fields
     {
-        field(1; "Resource Type"; Code[20])
+        field(100; "Resource Type"; Code[20])
         {
             DataClassification = ToBeClassified;
         }
 
-        field(2; "Maximum Participants"; Code[20])
+        field(101; "Maximum Participants"; Code[20])
         {
             DataClassification = ToBeClassified;
         }
 
-    }
-
-    keys
-    {
-        key(PK; "Resource Type")
-        {
-            Clustered = true;
-        }
     }
 
     var
