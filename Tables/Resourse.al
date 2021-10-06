@@ -3,7 +3,13 @@ tableextension 50103 Resource1 extends Resource
 
     fields
     {
-        field(100; "Resource Type"; Code[20])
+        field(100; "Resource Type"; Option)
+        {
+            OptionCaption = 'Internali,External';
+            OptionMembers = Internali,External;
+        }
+
+        field(102; Room; Integer)
         {
             DataClassification = ToBeClassified;
         }
